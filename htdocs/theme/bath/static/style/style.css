@@ -132,7 +132,7 @@ input[type=file] {
 
 /****************************** Buttons ****************************/
 /** input buttons **/
-.btn,
+.btn,.btn:link,
 input.submit,
 input.cancel,
 button,
@@ -141,12 +141,13 @@ input.button,
 input.select,
 input#files_filebrowser_edit_artefact,
 ul.groupuserstatus li a {
-	/*border-color: #d5ed8a #496000 #496000 #d5ed8a;*/
 	border-color: #84CBFF #0B69AF #0B69AF #84CBFF;
 	/*background: #547b23 url(../images/btn-bkgd.gif) repeat-x left top;*/
-	background: #0B69AF;
+  background-color: #0B69AF;
+  background-image:none;
 	color: #FFF !important;
 }
+
 /** hover for buttons **/
 .btn:hover,
 input.submit:hover,
@@ -348,7 +349,7 @@ ul.edit-view-tabs li {
   height: 25px;
   margin: 0 !important;
   background: none;
-  line-height: 25px;
+  line-height: 23px;
 }
 ul.in-page-tabs li a, ul.in-page-tabs li a:link, ul.in-page-tabs li a:visited, ul.in-page-tabs li a:active, ul.in-page-tabs li input.linkbtn,
 ul.edit-view-tabs li a, ul.edit-view-tabs li a:link, ul.edit-view-tabs li a:visited, ul.edit-view-tabs li a:active {
@@ -378,6 +379,7 @@ ul.edit-view-tabs li a.current-tab, ul.in-page-tabs li a.current-tab:link, ul.ed
 #mainmiddle {
 	width: 90%;
 	min-width: 950px;
+  max-width:none;
 	background: #FFFFFF;
 	box-shadow: 0 5px 10px 5px #E0E0E0;
 	-moz-box-shadow: 0 5px 10px 5px #E0E0E0;
