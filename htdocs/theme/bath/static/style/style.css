@@ -470,6 +470,7 @@ div.sideblock ul li{
 }
 #footer {
 	padding: 10px;
+	max-width: none; /*Elastic footer fix - Hittesh */
 }
 #micro #footer-wrap {
 	background-color: #939393;
@@ -611,3 +612,6 @@ div.sideblock ul li{
 	margin-bottom: -0.3em
 }
 .warning a {color: blue}
+
+/* elastic header - hittesh */
+#header{max-width:none;}
