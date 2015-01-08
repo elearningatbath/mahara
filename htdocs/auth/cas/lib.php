@@ -63,7 +63,12 @@ class AuthCas extends AuthLdap {
 		// pp_error_log('constr',$this->config);
 		return true;
 	}
-
+	public function get_user_info($username){
+		$objUser = parent::get_user_info($username);
+		//Username@bath.ac.uk should be the username
+		$objUser->email = $username.'@bath.ac.uk';
+		return $objUser;
+	}
 	public function init($id = null) {
 		$this->ready = parent::init($id);
 		// Check that required fields are set
