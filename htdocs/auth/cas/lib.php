@@ -224,7 +224,8 @@ class AuthCas extends AuthLdap {
 
 			if (method_exists('phpCAS', 'logoutWithRedirectService'))    {
 				//pp_error_log ('logout via','phpCAS::logoutWithRedirectService');
-				phpCAS::logoutWithRedirectService($backurl);
+				phpCAS::logoutWithURL($backurl);
+				//phpCAS::logoutWithRedirectService($backurl);
 			}
 			else {
 				//pp_error_log('logout via ','phpCAS::logoutWithURL');
