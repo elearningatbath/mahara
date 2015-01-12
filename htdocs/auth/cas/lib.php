@@ -65,8 +65,10 @@ class AuthCas extends AuthLdap {
 	}
 	public function get_user_info($username){
 		$objUser = parent::get_user_info($username);
-		//Username@bath.ac.uk should be the username
-		$objUser->email = $username.'@bath.ac.uk';
+		//Set email to be username@bath.ac.uk
+		if(!isset($objUser->email)){
+			$objUser->email = $username.'@bath.ac.uk';
+		}
 		return $objUser;
 	}
 	public function init($id = null) {
