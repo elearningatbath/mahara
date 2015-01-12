@@ -615,3 +615,16 @@ div.sideblock ul li{
 
 /* elastic header - hittesh */
 #header{max-width:none;}
+.btn-locked {
+background: transparent url(../images/locked.png) no-repeat 0 50%;
+padding-left: 25px;
+display: inline-block;
+}
+/* sso link */
+#sso_login_button{
+ padding: 10px 0 10px 0px;
+}
+#sso_login_button a {
+	padding : 5px 10px 5px 10px;
+	font-size: 1.167em;
+}
