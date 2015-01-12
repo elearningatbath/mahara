@@ -3,6 +3,7 @@
         <noscript><p>{str tag="javascriptnotenabled"}</p></noscript>
         {dynamic}{insert_messages placement='loginbox'}{/dynamic}
         <!--<div id="loginform_container">{$sbdata.loginform|safe}</div>-->
-        
-        <span style="color:#3366ff;background-color:#c0c0c0;"><a href="http://essd.bath.ac.uk/mahara_test/auth/cas" target="_self"><span style="color:#3366ff;background-color:#c0c0c0;">Sign in using <strong>University of Bath SSO</strong></span></a></span>
-    </div>
+<div id="sso_login_button">
+    <a class="btn" href="http://essd.bath.ac.uk/mahara_test/auth/cas"><span class="btn-locked">Sign in via SSO</span></a>    
+</div>    
+</div>
